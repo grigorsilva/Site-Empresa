@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vital Eletronicos| Reciclagem de Sucatas Eletrônicas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-main-texture">
+
+    <video autoplay loop muted playsinline id="meu-video-fundo">
+        <source src="Videos/IMG_1476.MP4" type="video/mp4">
+    </video>
+
+    <header id="inicio">
+        <div class="nav-container container">
+            <div class="logo">
+                <img src="IMAGENS/logosite.jpg" alt="Logo Vital">
+            </div>
+            
+            <button class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+          <nav>
+    <ul id="nav-list">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#logistica-reversa">Logística Reversa</a></li>
+        <li><a href="#processo">Processo</a></li>
+        <li><a href="#contato" class="btn-agendar">Contato</a></li>
+        <li>
+            <a href="https://wa.me/5511972071239" class="btn-whatsapp" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </li>
+    </ul>
+</nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>TRANSFORME SEU LIXO ELETRÔNICO EM UM FUTURO VERDE.</h1>
+                    <p class="hero-description">Coleta e reciclagem certificada de equipamentos e sucata eletrônica em Barueri e região.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5511972071239" class="btn-main">ENTRAR EM CONTATO AGORA</a>
+                    </div>
+                </div>
+                
+                </div>
+        
+        </section>
+
+        <section id="materiais" class="section-padding">
+            <div class="container">
+                <h2 class="section-title"><q>MATERIAIS QUE TRABALHAMOS</q></h2>
+                <div class="grid-materiais">
+                    
+                    <article class="card">
+                        <i class="fa-solid fa-laptop"></i>
+                        <h3>CPUs e Notebooks</h3>
+                        <p>Processadores, servidores e equipamentos de TI em geral.</p>
+                        <div class="card-img-container">
+                            <img src="IMAGENS/cpus.jpg" alt="CPUs e Notebooks">
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <i class="fa-solid fa-desktop"></i>
+                        <h3>Monitores</h3>
+                        <p>Telas de LED, LCD e dispositivos de vídeo antigos.</p>
+                        <div class="card-img-container">
+                            <img src="IMAGENS/monitor.png" alt="Monitores">
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h3>Placas Eletrônicas</h3>
+                        <p>Placas-mãe e circuitos de diversos dispositivos eletrônicos.</p>
+                        <div class="card-img-container">
+                            <img src="IMAGENS/placasele.jpg" alt="Placas Eletrônicas">
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <i class="fa-solid fa-plug"></i>
+                        <h3>Cabos e Fios</h3>
+                        <p>Fiação de cobre, alumínio e conectores eletrônicos.</p>
+                        <div class="card-img-container">
+                            <img src="IMAGENS/cabos.jpg" alt="Cabos e Fios">
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h3>CELULARES E TABLETS</h3>
+                        <p>Descarte de smartphones, tablets e aparelhos de telefonia móvel.</p>
+                        <div class="card-img-container">
+                            <img src="IMAGENS/smart.jpg" alt="smartphones">
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <i class="fa-solid fa-battery-three-quarters"></i>
+                        <h3>BATERIAS EM GERAL</h3>
+                        <p>Baterias de lítio, chumbo-ácido e pilhas alcalinas de diversos tipos.</p>
+                        <div class="card-img-container">
+                            <img src="IMAGENS/bateria.jpg" alt="Baterias para reciclagem">
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h3>PROCESSADORES</h3>
+                        <p>Processadores de máquinas e servidores.</p>
+                        <div class="card-img-container">
+                            <img src="IMAGENS/processador.jpg" alt="Processadores para reciclagem">
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <i class="fa-solid fa-tv"></i>
+                        <h3>ELETRÔNICOS EM GERAL</h3>
+                        <p>Impressoras, modems, videogames e periféricos.</p>
+                        <div class="card-img-container">
+                            <img src="IMAGENS/fonte.jpg" alt="Eletrônicos diversos para reciclagem">
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <i class="fa-solid fa-hard-drive"></i>
+                        <h3>VENTOINHAS, HDS E MAIS</h3>
+                        <p>Ventoinhas, HDs, Raio-X e Nobreaks.</p>
+                        <div class="card-img-container">
+                            <img src="IMAGENS/ventos.jpg" alt="Componentes eletrônicos variados">
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <style>
+   /* 1. CONTAINER PRINCIPAL */
+.certificacoes-neon {
+    width: 100% !important;
+    padding: 80px 0 !important; /* Mais respiro (espaçamento) */
+    background: #ffffff !important;
+    text-align: center !important;
+    overflow: hidden !important;
+    position: relative; /* Necessário para o efeito de sombra nas laterais */
+}
+
+/* Efeito de Fade nas laterais (O Segredo do visual Premium) */
+.certificacoes-neon::before,
+.certificacoes-neon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none; /* Permite clicar através da sombra */
+}
+
+.certificacoes-neon::before {
+    left: 0;
+    background: linear-gradient(to right, #ffffffc9 0%, transparent 100%);
+}
+
+.certificacoes-neon::after {
+    right: 0;
+    background: linear-gradient(to left, #ffffff 0%, transparent 100%);
+}
+
+/* Título Profissional */
+.certificacoes-neon h4 {
+    color: #000000; /* Verde moderno */
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+/* Linha de destaque sob o título */
+.certificacoes-neon h4::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #14800a;
+    border-radius: 2px;
+}
+
+/* 2. O MOTOR QUE FAZ ANDAR */
+.meu-carrossel-track {
+    display: flex !important;
+    width: max-content !important;
+    /* Tempo alterado para 35s para um movimento mais fluido e legível */
+    animation: mover-esteira 35s linear infinite; 
+}
+
+/* Pausa a animação ao passar o rato */
+.meu-carrossel-track:hover {
+    animation-play-state: paused;
+}
+
+/* 3. A LISTA DE IMAGENS */
+.lista-neon {
+    display: flex !important;           
+    flex-direction: row !important;    
+    flex-wrap: nowrap !important; 
+    justify-content: flex-start !important; 
+    align-items: center !important;     
+    list-style: none !important;        
+    padding: 0 40px 0 0 !important; 
+    margin: 0 !important;
+    gap: 80px !important; /* Espaçamento mais generoso entre as logos */
+}
+
+.lista-neon li {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 4. DESIGN DAS IMAGENS */
+.lista-neon img {
+    height: 85px !important; /* Tamanho levemente refinado */
+    width: auto !important;
+    max-width: 200px;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.4); /* Fica mais discreto quando não focado */
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Transição super suave */
+}
+
+/* Efeito Hover (Profissional e Chamativo) */
+.lista-neon img:hover {
+    opacity: 1 !important;
+    transform: scale(1.15) translateY(-5px);
+    /* Sombra colorida mais difusa, gerando um efeito de "brilho" moderno */
+    filter: grayscale(0%) drop-shadow(0 15px 25px rgb(34, 133, 4)); 
+    cursor: pointer;
+}
+
+/* A regra do movimento contínuo */
+@keyframes mover-esteira {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Responsivo para celulares */
+@media (max-width: 768px) {
+    .certificacoes-neon::before,
+    .certificacoes-neon::after {
+        width: 60px; /* Diminui a máscara lateral no celular */
+    }
+    .lista-neon img {
+        height: 65px !important; /* Logos menores em telas pequenas */
+    }
+    .lista-neon {
+        gap: 40px !important;
+    }
+}
+    </style>
+
+    
+<section class="certificacoes-neon" style="overflow: hidden;">
+    <h4><q>NOSSAS CERTIFICAÇÕES</q></h4>
+    
+    <div class="meu-carrossel-track">
+        <ul class="lista-neon">
+            <li><img src="IMAGENS/14001.png" alt="Eureciclo"></li>
+            <li><img src="IMAGENS/9001.jpeg" alt="Sisrecicla"></li>
+            <li><img src="IMAGENS/14001.png" alt="Florest"></li>
+            <li><img src="IMAGENS/9001.jpeg" alt="True"></li>
+            <li><img src="IMAGENS/birrr.jpeg" alt="Bureau"></li>
+        </ul>
+
+        <ul class="lista-neon">
+            <li><img src="IMAGENS/14001.png" alt="Eureciclo"></li>
+            <li><img src="IMAGENS/ibama.png" alt="Sisrecicla"></li>
+            <li><img src="IMAGENS/9001.jpeg" alt="Florest"></li>
+            <li><img src="IMAGENS/ibama.png" alt="True"></li>
+            <li><img src="IMAGENS/14001.png" alt="Bureau"></li>
+            <li><img src="IMAGENS/birrr.jpeg" alt="Bureau"></li>
+        </ul>
+    </div>
+</section>
+        <section id="logistica-reversa" class="section-padding bg-black">
+            <div class="container">
+                <h2 class="section-title text-white">LOGÍSTICA REVERSA</h2>
+                <div id="slider-logistica" class="slider-container">
+                    
+                    <div class="slide active">
+                        <div class="slide-flex">
+                            <img src="IMAGENS/coleta.png" alt="Logística Reversa Vital">
+                            <div class="slide-desc">
+                                <h3>O Ciclo do Amanhã</h3>
+                                <p>A Logística Reversa viabiliza a coleta e a restituição dos resíduos eletrônicos ao setor empresarial para reaproveitamento ou destinação ecológica.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-flex">
+                            <img src="IMAGENS/sustab.jpg" alt="Importância Ambiental">
+                            <div class="slide-desc">
+                                <h3>Preservação e Impacto</h3>
+                                <p>Previne a contaminação do solo por metais pesados e reduz a extração de novos recursos através da economia circular.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-flex">
+                            <img src="IMAGENS/Destinof.png" alt="Conformidade Legal">
+                            <div class="slide-desc">
+                                <h3>Sustentabilidade e Lei</h3>
+                                <p>Garante que empresas cumpram a Política Nacional de Resíduos Sólidos (PNRS), transformando obrigações em valor ambiental.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="processo" class="section-padding bg-black">
+            <div class="container">
+                <h2 class="section-title text-white">NOSSO PROCESSO</h2>
+                <div id="slider-processo" class="slider-container">
+                    
+                    <div class="slide active">
+                        <div class="slide-flex">
+                            <img src="IMAGENS/lreversa.png" alt="Coleta">
+                            <div class="slide-desc">
+                                <h3>1. Coleta ou Recebimento</h3>
+                                <p>Agendamos a retirada segura da sucata eletrônica no seu local com frota própria.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-flex">
+                            <img src="IMAGENS/desmonte.jpg" alt="Triagem">
+                            <div class="slide-desc">
+                                <h3>2. Separação e Triagem</h3>
+                                <p>Nossa equipe classifica os componentes eletrônicos para a destinação correta e segura.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-flex">
+                            <img src="IMAGENS/peso.jpg" alt="Pesagem">
+                            <div class="slide-desc">
+                                <h3>3. Pesagem e Destinação</h3>
+                                <p>Pesagem precisa e emissão de laudo de reciclagem certificada para sua empresa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section id="nao-ferrosos" class="section-padding bg-light-green">
+    <div class="container">
+        <div class="ferrosos-grid">
+            <div class="ferrosos-text">
+                <h2 class="section-title-left">Metais Não Ferrosos</h2>
+                <p>Além da sucata eletrônica, oferecemos soluções completas para a reciclagem de metais não ferrosos. Garantimos a melhor avaliação e destinação correta para resíduos industriais e comerciais.</p>
+                
+                <ul class="lista-materiais">
+                    <li><i class="fa-solid fa-check"></i> Cobre (Fios, Cabos e Barramentos)</li>
+                    <li><i class="fa-solid fa-check"></i> Alumínio (Perfis, Chapas e Rodas)</li>
+                    <li><i class="fa-solid fa-check"></i> Latão, Bronze e Inox</li>
+                    <li><i class="fa-solid fa-check"></i> Motores Elétricos</li>
+                </ul>
+
+                <a href="https://vitalmetais.com.br/" target="_blank" class="btn-outline">
+                    Conheça a Vital Metais <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            <div class="ferrosos-img">
+                <img src="IMAGENS/logovital.jpg" alt="Reciclagem de Metais Não Ferrosos" class="img-destaque">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section id="contato" class="contato-container">
+    <form action="enviar.php" method="POST" class="form-profissional">
+        <h2>Envie uma mensagem</h2>
+        <p>Entraremos em contato com você o mais breve possível.</p>
+        
+        <div class="input-group">
+            <input type="text" name="nome" placeholder="Seu nome completo" required>
+        </div>
+
+        <div class="input-group">
+            <input type="email" name="email" placeholder="seu@email.com" required>
+        </div>
+
+        <div class="input-group">
+            <textarea name="mensagem" placeholder="Como podemos ajudar?" required></textarea>
+        </div>
+
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+</section>
+
+</main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <img src="IMAGENS/logosite.jpg" alt="Vital M-Tech Logo" class="footer-logo">
+                <p><i class="fa fa-location-dot"></i> Alameda Caiapós 680, Barueri - SP</p>
+                <p><i class="fa fa-envelope"></i>eletronicos@vitalmetais.com.br</p>
+                <p><i class="fa-brands fa-whatsapp"></i> (11) 97207-1239</p>
+            </div>
+       
+            <div class="footer-social">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank" aria-label="Instagram" class="insta-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://web.facebook.com/vitalmetais?_rdc=1&_rdr#" target="_blank" aria-label="Facebook" class="face-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                
+                <div class="partner-section">
+                    <p> <strong> Materiais não ferrosos, acesse</strong></p>
+                    <a href="https://vitalmetais.com.br/" target="_blank" class="partner-link">
+                        <img src="IMAGENS/logovital.jpg" alt="Logo Vital Metais" class="partner-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2026 Vital eletronicos - Especialistas em Reciclagem de Sucata Eletrônica. @Grigor</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

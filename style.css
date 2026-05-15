@@ -1,0 +1,753 @@
+/* ---------------------------------------------------------------
+   1. VARIÁVEIS E CONFIGURAÇÕES GLOBAIS
+   ------------------------------------------------------------- */
+:root {
+    --verde-principal: #2E7D32;
+    --preto: #1A1A1A;
+    --branco: #FFFFFF;
+    --cinza-fundo: rgba(244, 244, 244, 0.95);
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Fundo Global com Textura */
+.bg-main-texture {
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--cinza-fundo);
+    background-blend-mode: overlay;
+}
+
+.container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.section-padding { 
+    padding: 80px 0; 
+}
+
+.section-title { 
+    text-align: center; 
+    margin-bottom: 50px; 
+    font-size: 2.2rem; 
+    font-weight: 800; 
+    color: var(--preto); 
+    text-transform: uppercase;
+}
+
+/* -----------------------------------------------------------
+   2. HEADER E NAVEGAÇÃO
+   ----------------------------------------------------------- */
+header { 
+    background: var(--branco); 
+    padding: 10px 0; 
+    box-shadow: 0 2px 10px rgba(255, 253, 253, 0.1); 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+.nav-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo img { 
+    height: 90px; 
+    width: auto;
+}
+
+nav ul { 
+    display: flex; 
+    list-style: none; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+nav a { 
+    text-decoration: none; 
+    color: var(--preto); 
+    font-weight: 600; 
+    font-size: 14px; 
+    transition: 0.3s; 
+}
+
+nav a:active {
+    background: #000000;
+    color: white;
+}
+
+
+.btn-agendar { 
+    background: var(--verde-principal); 
+    color: white !important; 
+    padding: 10px 22px; 
+    border-radius: 30px; 
+    transition: 0.3s;
+}
+
+.btn-agendar:hover {
+    background-color: #028814;
+    transform: scale(1.05);
+}
+
+/* Estilo do Botão WhatsApp na Navegação */
+.btn-whatsapp {
+    background-color: #25D366 !important;
+    color: white !important;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #06880d !important;
+    transform: scale(1.05);
+}
+
+/* Esconde o botão hambúrguer em telas de PC */
+.menu-toggle {
+    display: none !important;
+}
+
+/* ------------------------------------------------------------
+   3. HERO SECTION (INÍCIO)
+--------------------------------------------------------------- */
+.hero { 
+    padding: 60px 0; 
+}
+
+.hero-grid { 
+    display: grid; 
+    grid-template-columns: 1.2fr 0.8fr; 
+    align-items: center; 
+    gap: 40px; 
+}
+
+.hero-text h1 { 
+    font-size: 3rem; 
+    line-height: 1.1; 
+    margin-bottom: 20px; 
+}
+
+.hero-text h1 { 
+    font-size: 3rem; 
+    line-height: 1.1; 
+    margin-bottom: 20px; 
+    color: var(--branco); /* Adicione esta linha */
+}
+ 
+.hero-text p { 
+    font-size: 1rem; 
+    line-height: 1.1; 
+    margin-bottom: 10px; 
+    color: var(--branco); /* Adicione esta linha */
+}
+
+
+
+
+.hero-image img { 
+    width: 100%; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+}
+
+.btn-main { 
+    background: var(--verde-principal); 
+    color: white; 
+    padding: 15px 35px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    display: inline-block; 
+    transition: 0.3s; 
+}
+
+.btn-main:hover {
+    background-color: #1B5E20;
+    transform: translateY(-3px);
+}
+
+/* ----------------------------------------------------------
+   4. GRADE DE MATERIAIS 
+   -------------------------------------------------------- */
+.grid-materiais { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px; 
+    align-items: stretch; 
+}
+
+/* Mudar apenas o título da seção de materiais para branco */
+#materiais .section-title {
+    color: var(--branco) !important;
+}
+
+
+
+
+
+
+
+
+.card { 
+    background: white; 
+    padding: 30px; 
+    text-align: center; 
+    border-radius: 12px; 
+    border-bottom: 6px solid var(--verde-principal); 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06); 
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.card i { 
+    font-size: 45px; 
+    color: var(--verde-principal); 
+    margin-bottom: 20px; 
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--preto);
+    text-transform: uppercase;
+}
+
+.card p { 
+    font-size: 0.95rem; 
+    color: #555; 
+    margin-bottom: 25px;
+    flex-grow: 1; 
+}
+
+.card-img-container { 
+    width: 100%; 
+    height: 200px; 
+    overflow: hidden; 
+    border-radius: 8px; 
+    background: #f9f9f9;
+}
+
+.card-img-container img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-container img {
+    transform: scale(1.1);
+}
+
+/* -----------------------------------------------------------
+   5. SLIDER DE PROCESSO
+   ----------------------------------------------------------- */
+.bg-black { background: var(--preto); }
+.text-white { color: var(--branco); }
+
+.slider-container { 
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 15px; 
+    background: #222; 
+}
+
+.slide { display: none; padding: 40px; }
+.slide.active { display: block; animation: fade 0.8s; }
+
+.slide-flex { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    align-items: center; 
+    color: white; 
+}
+
+.slide-flex img { width: 90%; border-radius: 10px; height: 320px; object-fit: cover; }
+
+.slider-nav { 
+    position: absolute; 
+    width: 100%; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 0 10px; 
+}
+
+.slider-nav button { 
+    background: var(--verde-principal); 
+    color: white; 
+    border: none; 
+    padding: 12px 16px; 
+    cursor: pointer; 
+    border-radius: 50%; 
+    transition: 0.3s;
+}
+
+.slider-nav button:hover { background-color: var(--branco); color: var(--verde-principal); }
+
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* -----------------------------------------------------------
+   6. FOOTER E CONTATO
+   ---------------------------------------------------------- */
+footer { background: var(--preto); color: white; padding: 60px 0 20px; }
+.footer-grid { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
+.footer-logo { height: 100px; width: auto; margin-bottom: 20px; }
+.copyright { text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 13px; color: #777; }
+
+.btn-enviar {
+    background-color: #2E7D32; 
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn-enviar:hover {
+    background-color: #1B5E20; 
+    transform: scale(1.02);
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 30px;
+}
+
+.social-links a {
+    font-size: 40px !important;
+    color: #FFFFFF;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.insta-link:hover {
+    color: #E1306C !important;
+    transform: translateY(-5px);
+}
+
+.face-link:hover {
+    color: #1877F2 !important;
+    transform: translateY(-5px);
+}
+
+.partner-section {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.partner-section p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.partner-img {
+    width: 200px !important;
+    height: auto !important;
+    background: #FFFFFF;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+/* -----------------------------------------------------------
+   7. VÍDEO DE FUNDO BLINDADO
+   -------------------------------------------------------- */
+#meu-video-fundo {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    z-index: -1000 !important; /* Joga o vídeo para o fundo de tudo */
+    transform: translate(-50%, -50%) !important; /* Centraliza a imagem */
+    object-fit: cover !important; /* Impede que o robô fique esticado */
+    pointer-events: none !important; /* Impede que o vídeo roube os cliques */
+    opacity: 0.15; /* Opacidade do vídeo no fundo */
+}
+
+body.bg-main-texture {
+    background-image: none !important;
+    background-color: #1A1A1A !important;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+/* -----------------------------------------------------------
+   8. RESPONSIVIDADE (MOBILE) - CONSOLIDADA E LIMPA
+   ----------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    /* Correção Global */
+    html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Imagens e Sliders */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .slider-container {
+        width: 100% !important;
+        min-height: 400px;
+    }
+
+    /* Ajuste navegadores antigos */
+    .button {
+        -moz-transition: all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+
+    /* HEADER E MENU HAMBÚRGUER */
+    .nav-container {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background-color: var(--verde-principal) !important;
+        width: 45px !important;
+        height: 45px !important;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .menu-toggle i {
+        color: #ffffff !important;
+        font-size: 24px !important;
+        display: block !important;
+    }
+
+    /* ESCONDE O MENU POR PADRÃO NO CELULAR */
+    nav ul {
+        display: none !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--branco, #ffffff);
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        text-align: center;
+        z-index: 999;
+    }
+
+    /* MOSTRA O MENU QUANDO O BOTÃO É CLICADO */
+    nav ul.active {
+        display: flex !important;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav a:hover {
+        background: #000000;
+        color: white;
+    }
+
+    /* Ajuste Botão WhatsApp no Celular */
+    .btn-whatsapp {
+        margin-top: 10px;
+        justify-content: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+/* ------------------------------------------------------------
+   CORREÇÃO DOS SLIDERS E GRIDS NO CELULAR
+   -------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    /* 1. Empilha a imagem e o texto (um embaixo do outro) */
+    .hero-grid, .slide-flex, .footer-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center;
+        gap: 20px; /* Dá um pequeno espaço entre a foto e o texto */
+    }
+
+    /* 2. Ajusta a foto do slider para não amassar */
+    .slide-flex img {
+        width: 100% !important;
+        height: 250px !important; /* Altura ideal para o celular */
+        object-fit: cover !important; /* Corta as sobras em vez de esticar a imagem */
+        border-radius: 10px;
+    }
+
+    /* 3. Ajusta o tamanho da fonte do slider para caber bem */
+    .slide-desc h3 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+    
+    .slide-desc p {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
+/* ============================================================
+   MOTOR DA ANIMAÇÃO INFINITA
+   ============================================================ */
+.meu-carrossel-track {
+    display: flex;
+    width: max-content;
+    animation: mover-esteira 25s linear infinite;
+}
+
+/* Pausa a animação se o usuário colocar o mouse em cima */
+.meu-carrossel-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes mover-esteira {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
+
+}
+
+
+
+:root {
+    --primary-green: #055e02;    /* Verde Moderno (Mint) */
+    --dark-green: #055e02;
+    --text-main: #ffffff;
+    --text-light: #ffffff;
+    --bg-white: #000000;
+    --border-color: #f0f0f0;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Fundo leve para destacar o card branco */
+}
+
+.form-profissional {
+    background: var(--bg-white);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Sombra suave e ampla */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.form-profissional h2 {
+    margin-top: 0;
+    color: var(--text-main);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.form-profissional p {
+    color: var(--text-light);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo refinado para os campos */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1.5px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #fdfdfd;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
+}
+
+/* Efeito de foco profissional */
+input:focus, 
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(0, 184, 148, 0.1); /* Glow sutil ao focar */
+}
+
+textarea {
+    height: 120px;
+    resize: none; /* Evita que o usuário quebre o layout */
+}
+
+/* Botão com gradiente discreto e profundidade */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(0, 184, 148, 0.3);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+
+/* Seção de Materiais Não Ferrosos */
+.bg-light-green {
+    background-color: #f0fdf4; /* Um verde bem clarinho para diferenciar das outras seções */
+}
+
+.ferrosos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.section-title-left {
+    color: #156b00;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.lista-materiais {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.lista-materiais li {
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lista-materiais li i {
+    color: #055e02;
+    font-size: 20px;
+}
+
+/* Botão Estilizado */
+.btn-outline {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #055e02;
+    color: #055e02;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #055e02;
+    color: white;
+}
+
+.img-destaque {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px #028602; /* Detalhe de design moderno */
+}
+
+/* Responsivo para Celular */
+@media (max-width: 768px) {
+    .ferrosos-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .lista-materiais li {
+        justify-content: center;
+    }
+    .img-destaque {
+        order: -1; /* Imagem aparece antes do texto no celular */
+        box-shadow: 10px 10px 0px #037509;
+    }
+}
+
