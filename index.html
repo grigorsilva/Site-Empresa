@@ -17,6 +17,11 @@
         <div class="nav-container container">
             <div class="logo">
                 <img src="IMAGENS/logosite.jpg" alt="Logo Vital">
+                <div class="logo-tracos">
+                    <span class="traco traco-preto"></span>
+                    <span class="traco traco-verde"></span>
+                    <span class="traco traco-amarelo"></span>
+                </div>
             </div>
             
             <button class="menu-toggle" id="mobile-menu">
@@ -24,9 +29,10 @@
             </button>
           <nav>
     <ul id="nav-list">
-        <li><a href="#home">Início</a></li>
-        <li><a href="#logistica-reversa">Logística Reversa</a></li>
-        <li><a href="#processo">Processo</a></li>
+        <li><a href="#home" class="nav-link">Início</a></li>
+        <li><a href="#logistica-reversa" class="nav-link">Logística Reversa</a></li>
+        <li><a href="#processo" class="nav-link">Processo</a></li>
+        <li><a href="#certificacoes" class="nav-link">Certificações</a></li>
         <li><a href="#contato" class="btn-agendar">Contato</a></li>
         <li>
             <a href="https://wa.me/5511972071239" class="btn-whatsapp" target="_blank">
@@ -43,7 +49,7 @@
             <div class="container hero-grid">
                 <div class="hero-text">
                     <h1>TRANSFORME SEU LIXO ELETRÔNICO EM UM FUTURO VERDE.</h1>
-                    <p class="hero-description">Coleta e reciclagem certificada de equipamentos e sucata eletrônica em Barueri e região.</p>
+                    <p class="hero-description">Coleta e reciclagem certificada de equipamentos e sucata eletrônica na Grande São Paulo.</p>
                     <div class="hero-buttons">
                         <a href="https://wa.me/5511972071239" class="btn-main">ENTRAR EM CONTATO AGORA</a>
                     </div>
@@ -198,7 +204,7 @@
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background-color: #14800a;
+    background-color: #f0ff19;
     border-radius: 2px;
 }
 
@@ -277,24 +283,23 @@
     </style>
 
     
-<section class="certificacoes-neon" style="overflow: hidden;">
+<section id="certificacoes" class="certificacoes-neon" style="overflow: hidden;">
     <h4><q>NOSSAS CERTIFICAÇÕES</q></h4>
     
     <div class="meu-carrossel-track">
         <ul class="lista-neon">
-            <li><img src="IMAGENS/14001.png" alt="Eureciclo"></li>
-            <li><img src="IMAGENS/9001.jpeg" alt="Sisrecicla"></li>
+            <li><img src="IMAGENS/ibama.png" alt="Eureciclo"></li>
+            <li><img src="IMAGENS/birrr.jpeg" alt="Sisrecicla"></li>
             <li><img src="IMAGENS/14001.png" alt="Florest"></li>
             <li><img src="IMAGENS/9001.jpeg" alt="True"></li>
-            <li><img src="IMAGENS/birrr.jpeg" alt="Bureau"></li>
+            
         </ul>
 
         <ul class="lista-neon">
-            <li><img src="IMAGENS/14001.png" alt="Eureciclo"></li>
-            <li><img src="IMAGENS/ibama.png" alt="Sisrecicla"></li>
-            <li><img src="IMAGENS/9001.jpeg" alt="Florest"></li>
-            <li><img src="IMAGENS/ibama.png" alt="True"></li>
-            <li><img src="IMAGENS/14001.png" alt="Bureau"></li>
+            <li><img src="IMAGENS/ibama.png" alt="Eureciclo"></li>
+            <li><img src="IMAGENS/birrr.jpeg" alt="Sisrecicla"></li>
+            <li><img src="IMAGENS/14001.png" alt="Florest"></li>
+            <li><img src="IMAGENS/9001.jpeg" alt="True"></li>
             <li><img src="IMAGENS/birrr.jpeg" alt="Bureau"></li>
         </ul>
     </div>
@@ -309,7 +314,7 @@
                             <img src="IMAGENS/coleta.png" alt="Logística Reversa Vital">
                             <div class="slide-desc">
                                 <h3>O Ciclo do Amanhã</h3>
-                                <p>A Logística Reversa viabiliza a coleta e a restituição dos resíduos eletrônicos ao setor empresarial para reaproveitamento ou destinação ecológica.</p>
+                            <p>A Logística Reversa viabiliza a coleta e a restituição dos resíduos eletrônicos ao setor empresarial para reaproveitamento ou destinação ecológica.</p>
                             </div>
                         </div>
                     </div>
@@ -385,36 +390,78 @@
             </div>
         </section>
 
-<section id="nao-ferrosos" class="section-padding bg-light-green">
-    <div class="container">
-        <div class="ferrosos-grid">
-            <div class="ferrosos-text">
-                <h2 class="section-title-left">Metais Não Ferrosos</h2>
-                <p>Além da sucata eletrônica, oferecemos soluções completas para a reciclagem de metais não ferrosos. Garantimos a melhor avaliação e destinação correta para resíduos industriais e comerciais.</p>
-                
-                <ul class="lista-materiais">
-                    <li><i class="fa-solid fa-check"></i> Cobre (Fios, Cabos e Barramentos)</li>
-                    <li><i class="fa-solid fa-check"></i> Alumínio (Perfis, Chapas e Rodas)</li>
-                    <li><i class="fa-solid fa-check"></i> Latão, Bronze e Inox</li>
-                    <li><i class="fa-solid fa-check"></i> Motores Elétricos</li>
-                </ul>
 
-                <a href="https://vitalmetais.com.br/" target="_blank" class="btn-outline">
-                    Conheça a Vital Metais <i class="fa-solid fa-arrow-up-right-from-square"></i>
+<!-- ══════════════════════════════════════════════
+     SEÇÃO: METAIS NÃO FERROSOS
+══════════════════════════════════════════════ -->
+<section id="metais-nao-ferrosos" class="bg-white-eletronicos">
+    <div class="container">
+        <div class="eletronicos-grid">
+
+            <!-- CARD COM ARCOS + IMAGEM DA LOGO -->
+            <div class="eletronicos-img-wrap">
+                <div class="card-metais-visual">
+
+                    <!-- Arcos de fundo (SVG) -->
+                    <svg class="card-arcos-svg" viewBox="0 0 780 440" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="gGreenS" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#4ac057"/>
+                                <stop offset="100%" stop-color="#1c7a28"/>
+                            </linearGradient>
+                            <linearGradient id="gYellowS" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#ffe033"/>
+                                <stop offset="100%" stop-color="#d4a000"/>
+                            </linearGradient>
+                            <clipPath id="clipGreenS">
+                                <rect x="0" y="0" width="205" height="440"/>
+                            </clipPath>
+                            <clipPath id="clipYellowS">
+                                <rect x="58" y="0" width="722" height="440"/>
+                            </clipPath>
+                        </defs>
+                        <rect width="780" height="440" rx="22" fill="#000000"/>
+                        <circle cx="115" cy="220" r="190" stroke="url(#gGreenS)" stroke-width="60" fill="none" clip-path="url(#clipGreenS)"/>
+                        <circle cx="115" cy="220" r="155" stroke="url(#gYellowS)" stroke-width="75" fill="none" clip-path="url(#clipYellowS)"/>
+                        <circle cx="115" cy="220" r="118" fill="#000000"/>
+                    </svg>
+
+                    <!-- ✅ LOGO — troque "IMAGENS/logovital.jpg" pelo caminho da sua imagem -->
+                    <img class="card-logo-img" src="IMAGENS/vitallogop.png" alt="Vital Metais Logo">
+
+                    <!-- ✅ RODAPÉ: BIR e Bandeira separados -->
+                    <div class="card-footer-imgs">
+                        <!-- "IMAGENS/birrr.jpeg"  -->
+                        <img class="card-footer-bir" src="IMAGENS/birrr.jpeg" alt="BIR">
+                        <!-- troque "IMAGENS/brasil.png" s -->
+                        <img class="card-footer-flag" src="IMAGENS/BRASIL.png" alt="Brasil">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TEXTO E LISTA -->
+            <div class="eletronicos-texto">
+                <h2 style="font-size:2rem; font-weight:800; color:#1a1a1a; text-transform:uppercase; margin-bottom:16px;">
+                    Metais Ferrosos e Não Ferrosos
+                </h2>
+                <p style="font-size:1rem; color:#000000; line-height:1.7; margin-bottom:10px;">
+                    Além da sucata eletrônica, oferecemos soluções completas para a reciclagem de metais ferrosos enão ferrosos. Garantimos a melhor avaliação e destinação correta para resíduos industriais e comerciais.
+                </p>
+                <ul class="lista-servicos">
+                    <li><i class="fa-solid fa-circle-check"></i> Cobre (Fios, Cabos e Barramentos)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Alumínio (Perfis, Chapas e Rodas)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Latão, Bronze e Inox</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Motores Elétricos</li>
+                </ul>
+                <a href="https://vitalmetais.com.br/" target="_blank" class="btn-eletronicos">
+                    Conheça a Vital Metais <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left:8px;"></i>
                 </a>
             </div>
-            <div class="ferrosos-img">
-                <img src="IMAGENS/logovital.jpg" alt="Reciclagem de Metais Não Ferrosos" class="img-destaque">
-            </div>
+
         </div>
     </div>
 </section>
-
-
-
-
-
-
 
 <section id="contato" class="contato-container">
     <form action="enviar.php" method="POST" class="form-profissional">
@@ -429,13 +476,26 @@
             <input type="email" name="email" placeholder="seu@email.com" required>
         </div>
 
+
+        <div class="input-group input-group-tel">
+            <span class="tel-icon"><i class="fa-brands fa-whatsapp"></i></span>
+            <input type="tel" name="whatsapp" placeholder="(11) 99999-9999" 
+                   maxlength="15" required
+                   oninput="this.value = this.value.replace(/\D/g,'').replace(/^(\d{2})(\d)/,'($1) $2').replace(/(\d{5})(\d)/,'$1-$2')">
+        </div>
+
+
         <div class="input-group">
             <textarea name="mensagem" placeholder="Como podemos ajudar?" required></textarea>
         </div>
+        
 
         <button type="submit">Enviar Mensagem</button>
     </form>
 </section>
+</div>
+ 
+
 
 </main>
 
@@ -444,14 +504,27 @@
             <div class="footer-info">
                 <img src="IMAGENS/logosite.jpg" alt="Vital M-Tech Logo" class="footer-logo">
                 <p><i class="fa fa-location-dot"></i> Alameda Caiapós 680, Barueri - SP</p>
-                <p><i class="fa fa-envelope"></i>eletronicos@vitalmetais.com.br</p>
-                <p><i class="fa-brands fa-whatsapp"></i> (11) 97207-1239</p>
+                <p><i class="fa fa-location-dot"></i> Av. Inocêncio Seráfico, 5039 - Carapicuíba-SP</p>
+                
+                <p><i class="fa fa-envelope"></i> eletronicos@vitalmetais.com.br</p>
+               <p>
+  <i class="fa-brands fa-whatsapp"></i> 
+  <a href="https://api.whatsapp.com/send?phone=5511972071239" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+    (11) 97207-1239
+  </a>
+</p>
+<p>
+  <i class="fa-brands fa-whatsapp"></i> 
+  <a href="https://api.whatsapp.com/send?phone=5511982388264" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+    (11) 98238-8264
+  </a>
+</p>                
             </div>
        
             <div class="footer-social">
                 <h4>Siga-nos</h4>
                 <div class="social-links">
-                    <a href="#" target="_blank" aria-label="Instagram" class="insta-link">
+                    <a href="https://www.instagram.com/vitalmetais/" target="_blank" aria-label="Instagram" class="insta-link">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                     <a href="https://web.facebook.com/vitalmetais?_rdc=1&_rdr#" target="_blank" aria-label="Facebook" class="face-link">
@@ -460,7 +533,7 @@
                 </div>
                 
                 <div class="partner-section">
-                    <p> <strong> Materiais não ferrosos, acesse</strong></p>
+                    <p> <strong> Materiais ferrosos e não ferrosos, acesse</strong></p>
                     <a href="https://vitalmetais.com.br/" target="_blank" class="partner-link">
                         <img src="IMAGENS/logovital.jpg" alt="Logo Vital Metais" class="partner-img">
                     </a>
@@ -472,7 +545,21 @@
             <p>&copy; 2026 Vital eletronicos - Especialistas em Reciclagem de Sucata Eletrônica. @Grigor</p>
         </div>
     </footer>
+<a href="https://api.whatsapp.com/send?phone=5511977164468&text=Ol%C3%A1!+Gostaria+de+falar+sobre+a+reciclagem+de+eletr%C3%B4nicos." 
+   target="_blank" 
+   class="btn-whatsapp-flutuante"
+   title="Fale conosco pelo WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
 
+<div id="modal-sucesso" class="modal-overlay">
+  <div class="modal-box">
+    <i class="fa-solid fa-circle-check"></i>
+    <h3>Mensagem Enviada!</h3>
+    <p>Obrigado por entrar em contato com a Vital. A nossa equipe recebeu o seu e-mail e retornará o mais breve possível.</p>
+    <button onclick="fecharModalSucesso()">Fechar</button>
+  </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>

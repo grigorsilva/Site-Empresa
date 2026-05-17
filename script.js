@@ -114,3 +114,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
+
+/* ── CONTROLE DO MODAL DE AGRADECIMENTO ── */
+document.addEventListener('DOMContentLoaded', () => {
+  const formContato = document.getElementById('form-contato'); // ID do seu formulário
+  const modalSucesso = document.getElementById('modal-sucesso');
+
+  if (formContato && modalSucesso) {
+    formContato.addEventListener('submit', function (e) {
+      // Impede que a página recarregue ao clicar em enviar
+      e.preventDefault(); 
+      
+      /* NOTA: Aqui no meio deve estar a sua lógica de envio de e-mail
+         (por exemplo, Formspree, EmailJS, AJAX, ou PHP). 
+      */
+
+      // Mostra o pop-up de sucesso
+      modalSucesso.classList.add('ativo');
+
+      // Limpa os campos do formulário para o cliente
+      formContato.reset();
+    });
+  }
+});
+
+// Função para fechar o pop-up no botão "Fechar"
+function fecharModalSucesso() {
+  const modalSucesso = document.getElementById('modal-sucesso');
+  if (modalSucesso) {
+    modalSucesso.classList.remove('ativo');
+  }
+}
